@@ -21,7 +21,7 @@ def index():
 
 def fetch_conversion_factor(source,target):
 
-    url = "http://data.fixer.io/api/latest? access_key = 2be0ec43e4e073954ba714f5073bddad & base = {} & symbols={}".format(source,target)
+    url = "http://data.fixer.io/api/latest? access_key = 2be0ec43e4e073954ba714f5073bddad"
 
     response = requests.get(url)
     response = response.json()
