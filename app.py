@@ -21,7 +21,7 @@ def index():
 
 def fetch_conversion_factor(source,target):
 
-    url = "https://free.currconv.com/api/v7/convert?q={}_{}&compact=ultra&apiKey=9aa0c54f5ad4c460c36d".format(source,target)
+    url = "http://data.fixer.io/api/latest?access_key=2be0ec43e4e073954ba714f5073bddad".format(source,target)
 
     response = requests.get(url)
     response = response.json()
